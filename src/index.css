@@ -1,0 +1,105 @@
+
+:root{
+  --textgreen:rgb(22 101 52);
+  --darkgreen:rgb(20, 92, 48);
+  --backgroundgreen:rgba(220, 252, 231, 1);
+  --primary: rgb(4, 126, 219);
+  --secondary:rgb(236, 135, 0);
+  --background:rgb(229, 241, 250);
+}
+body{
+ font-family: "Inter",serif;
+
+}
+h1{
+  font-size: 2.2em;
+}
+.mainContainer {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 2rem 1rem;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+a {
+  text-decoration: none;
+}
+
+button {
+  all: unset;             
+  cursor: pointer;
+  font-size: 14px;        
+}
+
+.herosection {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  border-radius: 3em;
+}
+
+
+.profile{
+  display: flex;
+  align-items: center;            
+  gap: 1rem;                  
+}
+
+.profileImage{
+  width: 5em;
+  height: 5em;
+  border-radius: 3em;
+  box-shadow: 1px 10px 25px -14px rgba(0,0,0,0.75);
+  -webkit-box-shadow: 1px 10px 25px -14px rgba(0,0,0,0.75);
+  -moz-box-shadow: 1px 10px 25px -14px rgba(0,0,0,0.75);
+}
+
+.titlesecondary{
+  color:var(--primary)
+}
+.readytowork{
+  color:var(--textgreen);
+  background-color:var(--backgroundgreen);
+  border-radius: 3em;
+  border: solid var(--darkgreen) 2px;
+  padding: 0.25em 0.50em;
+  transition: transform 0.3s ease;
+}
+.herosection p strong{
+  color:var(--secondary)
+}
+.readytowork:hover {
+  transform: scale(1.05); /* Agranda el botón al 120% */
+}
+.readytowork a{
+  color:var(--textgreen);
+}
+.card{
+  display: flex;
+  height: 18em;
+}
+.carddescription{
+  flex-direction: column;
+}
+
+.imagecard{
+  width: 50%;
+  height: 80%;
+  border-radius: 1em;
+}
+
+body, html, #main {
+  margin: 0;
+  padding: 0;
+  background-color: var(--background);
+}
+
+.card p{
+  width: 90%;
+}
+.carddescription {
+  margin-left: 2em;
+  width: 50%;
+}
